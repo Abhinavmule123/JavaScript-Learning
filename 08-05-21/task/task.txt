@@ -1,0 +1,3 @@
+take input from the user 
+store it into variable 
+disply it on screen .
