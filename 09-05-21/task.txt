@@ -1,0 +1,3 @@
+you have to make five arrow function with parameter .
+In each function do mathematical operation like +,-,,*,/,%;
+call them in any order and diplay the output in console
