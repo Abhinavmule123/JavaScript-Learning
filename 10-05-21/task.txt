@@ -1,0 +1,15 @@
+1. Write a Program to print all natural numbers from 1 to n.
+2. Write a Program to print all natural numbers in reverse (from n to 1)
+3. Write a Program to print all alphabets from a to z.
+4. Write a Program to print all even numbers between 1 to 100. -
+5. Write a Program to print all odd number between 1 to 100.
+6. Write a Program to find sum of all natural numbers between 1 to n.
+7. Write a Program to find sum of all even numbers between 1 to n.
+8. Write a Program to find sum of all odd numbers between 1 to n.
+9. Write a Program to print multiplication table of any number.
+10. Write a Program to count number of digits in a number.
+11. Write a Program to find first and last digit of a number.
+12. Write a Program to find sum of first and last digit of a number.
+13. Write a Program to swap first and last digits of a number.
+14. Write a Program to calculate sum of digits of a number like if no 18357 asel tr 1+8+3+5+7 tychi addition hun ans ala pahije. 
+15. Write a Program to calculate product of digits of a number. like 154 no ahe tr 1*5*4
