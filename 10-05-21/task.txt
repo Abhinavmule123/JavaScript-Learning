@@ -13,3 +13,4 @@
 13. Write a Program to swap first and last digits of a number.
 14. Write a Program to calculate sum of digits of a number like if no 18357 asel tr 1+8+3+5+7 tychi addition hun ans ala pahije. 
 15. Write a Program to calculate product of digits of a number. like 154 no ahe tr 1*5*4
+
