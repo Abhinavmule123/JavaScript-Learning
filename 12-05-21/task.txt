@@ -1,0 +1,3 @@
+get input from the users and store the users input data in array and make sure that users enter at least 5 times and show data in console ;
+on that array perform * operation using foreach method
+apply all method on that array like push,pop,unshift,shift,join,concat,indexof
