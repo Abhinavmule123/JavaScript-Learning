@@ -9,7 +9,9 @@
         h1{
             color: green;
         }
-    </style>
+       
+
+    </style>  
 </head>
 <body>
     <!-- web browser : 
@@ -18,20 +20,21 @@
             DOM - ek object file , API  , Application programming interface 
              H1 -- add , modify , delete , content change karu shakto .,styling 
 <h1> this is h1 tag</h1> -- dom consider every html tag as object  -->
-            
+        
 
     <!-- DOM level 0 : basics html  , body, form , images , anchor , structure ,view ,manipulate ,  
     DOM level 1 : level 0 + sepcific function , access , modify , delete , manipulate , all html elements can manipulate,
-    DOM level 2 : level 0 ,1 we can modify elements css also , styling , and desiging 
+    DOM level 2 : level 0 ,1 we can modify elements css also , styling , and desiging .
     DOM level 3 : level 0,1,2 + we can handle event also in level 3 .
     DOM level 4 :  Enhanced features.. -->
 
 
-    <!-- DOM categories : 
+    <!-- DOM categories :   
     1.  DOM Core  : basics html  , body, form , images , anchor , structure ,view ,manipulate , 
     2. DOM html  :  sepcific function , access , modify , delete , manipulate , all html elements can manipulate,
     3. DOM CSS : we can modify elements css also , styling , and desiging 
-    4. DOM event : we can handle event also in level 3 -->
+    4. DOM event : we can handle event also in level 3 
+    5. DOM XML : xml file handle 
 
     <!-- all html elements => node / object 
     <h1>this is h1 tag</h1> => text node
@@ -39,8 +42,23 @@
     <!-- this is html comment -->
      <!-- -- comment node  
         element node -- all html tag is element node 
-    node of element -- text node , comment node . -->
-        <h1 id="heading">This is h1 tag</h1>
+    node of element -- text node , comment node  -->
+    
+    <ul>  
+    <!-- ul is parent  -->
+    <!-- all li is childerns -->
+    <!--  <li id="first"></li>    is ul is firstChild -->
+         <li id="first"></li>    
+        <li id="second"></li>
+        <li id="third"></li>
+        <!-- <li id="fourth"></li>  ul lastChild -->
+        <li id="fourth"></li>  
+    </ul>
+
+
+
+        <h1 class="heading">This is h1 tag</h1>
+        <h1 class="heading">This is h2 tag</h1>
     <script src="script.js">
       
     </script>
