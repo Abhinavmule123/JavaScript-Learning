@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript selectors</title>
+    <style>
+        /* #heading{
+            color: green;
+        } */
+        /* .heading{
+            color: green;
+        } */
+        #box #heading{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+    <h1 class="heading" id="heading">This is h1 tag</h1>
+    <h1 class="heading">This is second h1 tag</h1>
+    </div>
+    
+    <ul id="ul-container">   
+        <li >first</li>    
+        <li id="first">second</li>
+        <li>third</li>
+        <li>fourth</li>
+        <li>fifth</li>
+    </ul>
+    <script src="script.js"></script>
+</body>
+</html>

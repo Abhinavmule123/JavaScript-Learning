@@ -16,9 +16,9 @@
 //3 . document.getElementsByTagName("h1");
 // let h1Tag = document.getElementsByTagName("h1"); 
 // for(let i=0;i<h1Tag.length;i++){
-//     h1Tag[i].innerHTML = "this is js text";
+//     console.log(h1Tag[i]);
 // }
-// h1Tag.forEach((val)=>{
-//     val.innerHTML = "this is js text";
-// });
+
+
+
 
