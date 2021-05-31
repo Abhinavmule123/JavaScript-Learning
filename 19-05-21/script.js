@@ -8,7 +8,7 @@
 // let x = ab.unshift(6,7);
 // console.log(x);
 // 3.pop
-// let ab = [1,2,3,4,5,[3,4,4]];
+// let ab = [,2,3,4,5,[3,4,4]];
 // let x = ab.pop();
 // console.log(ab);
 //4. shift
@@ -34,7 +34,7 @@
 // console.log(x);
 //9.fill
 // let ab = [1,2,3,4,5];
-// let x=ab.fill("hello",0,4);
+// let x=ab.fill("hello",0,2);
 // console.log(ab);
 
 // // 10 concat 

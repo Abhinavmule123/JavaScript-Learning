@@ -59,4 +59,5 @@ h1Tag.append(h1String);  // appending text node in h1 tag
 let container = document.getElementById("container");
 container.append(h1Comment);
 container.append(h1Tag);
+console.log(container);
 
