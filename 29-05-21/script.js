@@ -8,7 +8,7 @@
 // const h1 = document.querySelectorAll("h1");
 // console.log(h1);
 
-// Nodes Properties 
+//dom Nodes Properties 
 // 1. NodeName -  it gives the name of Node. 
 // const h1Id = document.getElementById("heading");
 // console.log(h1Id.nodeName);
@@ -48,3 +48,4 @@
 // 10 . previousElementSibling -- it gives the side wala node(it not consider text, comment node)  
 // const liId = document.getElementById("first");
 // console.log(liId.previousElementSibling);
+
