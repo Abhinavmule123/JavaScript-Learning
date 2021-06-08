@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <header>
+       <h1 class="animate__animated animate__pulse"> Abhinav Todo's App</h1>
+       <nav>
+           <ul id="menu">
+               <li><a href="index.html">Home</a></li>
+               <li id="add-todo"><a href="#">Add Todo</a></li>
+               <li><a href="#">Manage Todo</a></li>
+           </ul>
+       </nav>
+    </header>
+   <section>
+       <hr style="margin-bottom: 30px;">
+       <div id="todo-list">
+           <h2 align="center">Today's Task</h2> 
+           <hr>
+            <ol>
+                <!-- <li>College Work <button type="button">Mark</button></li>
+                <li>Watching videos <button type="button">Mark</button></li>
+                <li>playing games <button type="button">Mark</button></li> -->
+            </ol>
+       </div>
+       <div id="todo-completed-list">
+            <h2 align="center">Today's Completed Task</h2>
+            <hr>
+            <ol>
+
+            </ol>
+       </div>
+   </section>
+   <div id="background"></div>
+   <div id="modal">
+        <form>
+            <label for="todo">Add Your Todo</label> <br>
+            <input type="text" name="todo" id="todo"> <br>
+            <input type="submit" value="Add">
+        </form>
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>
