@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setinterval and setTimeout </title>
+    <style>
+        #box{
+          
+            border: 1px solid red;
+            width: 200px;
+            height: 300px;
+        }
+        #box:hover{
+            /* transform: rotate(190deg); */
+            /* transform: translate(20%); */
+            transform: scale(1.4);
+        }
+    </style>
+</head>
+<body>
+    <!-- <center>
+    <p id="date" style="font-size: 25px;font-family: cursive;"></p>
+</center> -->
+<center>
+        <p id="timer" style="font-size: 80px;font-family: cursive;">5</p>
+    </center>
+    <div id="box">
+
+    </div>
+    <script>
+        //setTimeout -- 
+        // let setTimoutId= setTimeout(function(){
+        //     alert("settimeout function");
+        // },5000);
+        // function hello(){  
+        //     alert("hello");  
+        // }
+        // function hello1(){  
+        //     alert("hello 1");  
+        // }
+        // hello1();   
+        // clearSetTimeout --
+        //  clearTimeout(setTimoutId);
+
+        // setInterval()  -- 
+        // setInterval(setDate,1000); 
+        //  function setDate(){
+        //      let pId = document.getElementById("date");
+        //      let date = new Date();
+        //      let year = date.getFullYear();
+        //      let month = date.getMonth();
+        //      let day = date.getDate();
+        //      let time = date.toLocaleTimeString();
+        //     pId.innerHTML = `${day}-${month}-${year}  ${time}`;
+        //  }
+
+    //    let setIntervalId = setInterval(timer,1000);
+            let count = 5;
+         function timer(){
+             let timerId = document.getElementById("timer");
+            timerId.innerHTML = count;
+            count--;
+            if(count ==-1){
+                clearInterval(setIntervalId);
+                let a = document.createElement("A");
+                a.href = "gold img.jpg";
+                a.download = "gold imgs";
+                a.click();
+            }
+         }
+         timer();
+    </script>
+</body>
+</html>

@@ -80,13 +80,21 @@ section #todo-completed-list{
     font-size: 17px;
     float: right;
 }
-#modal input[type=submit]{
+#modal input[type=submit],.edit-btn,.update-btn{
     padding: 10px 16px;
     background-color: rgb(21, 176, 182);
     color: white;
     border: none;
     cursor: pointer;
     font-size: 17px;   
+}
+.del-btn{
+    padding: 10px 16px;
+    background-color: rgb(231, 49, 49);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 17px; 
 }
 #todo-list ol li button:hover,#todo-completed-list ol li button:hover{
     background-color: white;
@@ -136,4 +144,49 @@ section #todo-completed-list{
     border: 1px solid #ccc;
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+#manage-container{
+    width: 550px;
+    height: auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    top: 45%;
+    left: -30%;
+    transform: translate(-50%,-50%); 
+    transition: 1s;
+}
+#manage-container table tr td{
+    padding: 15px;
+}
+#manage-container table tr{
+    font-size: 20px ;
+    line-height: 38px;
+    padding: 5px;
+    font-family: cursive;
+    transition: 1s;   
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+#toast{
+    position: absolute;
+    top: 15%;
+    right: 3%;
+    padding: 20px 15px;
+    z-index: 100;
+    width: 300px;
+    height: auto;
+    background-color: teal;
+    color: white;
+    border-radius: 10px;
+    font-size: 22px;
+    line-height: 30px;
+    display: none;
 }
