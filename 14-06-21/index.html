@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <!-- start of login form -->
+        <div class="login-container">
+            <h1 align="center" id="login-title">Login Here</h1>
+            <hr style="margin: 20px 0px;">
+            <form>
+                <label for="email">E-Mail : </label> 
+                <br>
+                <input type="email" name="email" id="login-email"> 
+                <br><br>
+                <label for="password">Password : </label>
+                <br>
+                <input type="password" name="password" id="login-password">
+                <br><br>
+                <input type="submit" value="Login">
+            </form>
+           <p id="singup-text">Don't have account !
+            <a href="#" id="show-signup"> click here to create</a>
+            </p>
+        </div>
+    <!-- end of login form -->
+
+    <!-- start of signup form -->
+        <div class="signup-container" id="signup-box">
+            <h1 align="center" id="signup-title">Signup Here 
+                <i class="fa fa-close" style="float: right;background-color: black;padding: 5px;font-size: 23px;cursor: pointer;" id="close"></i>
+            </h1>
+            
+            <hr style="margin: 20px 0px;">
+            <form>
+                <label for="name">Name : </label> 
+                <br>
+                <input type="text" name="name" id="signup-name">
+                <br><br>
+                <label for="mobile">Mobile No : </label>
+                <br>
+                <input type="number" name="mobile" id="signup-mobile">
+                <br><br>
+                <label for="email">E-Mail : </label> 
+                <br>
+                <input type="email" name="email" id="signup-email"> 
+                <br><br>
+                <label for="password">Password  :</label>
+                <br>
+                <input type="password" name="password" id="signup-password">
+                <br><br>
+                <button type="submit" id="singup-btn">Signup</button>
+            </form>
+        </div>
+    <!-- end of singup form -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
