@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: auto;
+}
+header h1{
+    margin: 0;
+    padding: 0;
+    margin-top:18px;
+    font-family: cursive;
+    font-size: 36px;
+    color: rgb(36, 153, 36);
+    margin-left: 25px;
+    font-weight: bold;
+    float: left;
+}
+#menu{
+    list-style: none;
+    float: right;
+    margin-right: 20px;
+    margin-top: 18px;
+}
+#menu li{
+    display: inline-block;
+    margin-left: 20px;
+    padding: 10px 8px;
+    font-size: 20px;
+    font-family: cursive;
+    transition: 1s;
+}
+#menu li a{
+    text-decoration: none;
+    color: black;
+}
+#menu li:hover{
+    background-color: rgb(36, 153, 36);
+    color:white;
+}
+#menu li a:hover{
+    color:white;
+}
+
+section{
+    width: 100%;
+    padding: 10px;
+    height: auto;
+    float: left;
+}
+section #todo-list{
+    width: 45%;
+    float: left;
+    margin-left: 2%;
+    box-shadow: 3px 5px 13px grey;
+}
+section #todo-completed-list{
+    width: 45%;
+    margin-left: 5%;
+    box-shadow: 3px 5px 13px grey;
+    float: left;
+}   
+#todo-list ol li,#todo-completed-list ol li{
+    font-size: 20px ;
+    line-height: 38px;
+    padding: 5px;
+    font-family: cursive;
+    transition: 1s;
+}
+#todo-list ol li button,#todo-completed-list ol li button{
+    padding: 10px 16px;
+    background-color: rgb(21, 176, 182);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    float: right;
+}
+#modal input[type=submit],.edit-btn,.update-btn{
+    padding: 10px 16px;
+    background-color: rgb(21, 176, 182);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;   
+}
+.del-btn{
+    padding: 10px 16px;
+    background-color: rgb(231, 49, 49);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 17px; 
+}
+#todo-list ol li button:hover,#todo-completed-list ol li button:hover{
+    background-color: white;
+    color: rgb(21, 176, 182);
+}
+#modal input[type=submit]:hover{
+    background-color: rgb(40, 187, 192);
+    color: white;
+    border-radius: 8px;
+}
+#todo-list ol li:hover,#todo-completed-list ol li:hover{
+    background-color: rgb(21, 176, 182);
+    color: white;
+}
+#todo-list h2,#todo-completed-list h2{
+    color: rgb(36, 153, 36);
+    font-family: cursive;
+    font-weight: bold;
+}
+#background{
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#modal{
+    width: 350px;
+    height: auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+   display: none;
+}
+#modal label{
+    font-size: 20px;
+}
+#modal input[type=text]{
+    width: 100%;
+    padding: 8px 15px ;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#manage-container{
+    width: 550px;
+    height: auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    top: 45%;
+    left: -30%;
+    transform: translate(-50%,-50%); 
+    transition: 1s;
+}
+#manage-container table tr td{
+    padding: 15px;
+}
+#manage-container table tr{
+    font-size: 20px ;
+    line-height: 38px;
+    padding: 5px;
+    font-family: cursive;
+    transition: 1s;   
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+#toast{
+    position: absolute;
+    top: 15%;
+    right: 3%;
+    padding: 20px 15px;
+    z-index: 100;
+    width: 300px;
+    height: auto;
+    background-color: teal;
+    color: white;
+    border-radius: 10px;
+    font-size: 22px;
+    line-height: 30px;
+    display: none;
+}

@@ -1,8 +1,8 @@
 
 // 1. nodeName , nodeType , nodeValue    
 // 11. nodeValue - it gives the text node of selected node
-// const liId = document.getElementById("ul-container");
-// console.log(liId.childNodes[0].nodeValue);
+const liId = document.getElementById("ul-container");
+console.log(liId.childNodes[0].nodeValue);
 
 //12 . nextSibling - it also gives text , comment node 
 //13 . nextElementSibling - it gives element node only 
