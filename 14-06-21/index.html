@@ -7,6 +7,10 @@
     <title>Login and Register Form</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
     <div class="container">
@@ -14,15 +18,20 @@
         <div class="login-container">
             <h1 align="center" id="login-title">Login Here</h1>
             <hr style="margin: 20px 0px;">
-            <form>
+            <form id="login-form" novalidate="true">
                 <label for="email">E-Mail : </label> 
                 <br>
                 <input type="email" name="email" id="login-email"> 
-                <br><br>
+                <br>
+                <span id="lemail-error"></span>
+                <br>
                 <label for="password">Password : </label>
                 <br>
                 <input type="password" name="password" id="login-password">
-                <br><br>
+                <br>
+                <span id="lpassword-error"></span>
+                <br>
+                <span id="lerror"></span>
                 <input type="submit" value="Login">
             </form>
            <p id="singup-text">Don't have account !
@@ -38,7 +47,7 @@
             </h1>
             
             <hr style="margin: 20px 0px;">
-            <form>
+            <form id="signup-form" novalidate="true">
                 <label for="name">Name : </label> 
                 <br>
                 <input type="text" name="name" id="signup-name">
@@ -46,15 +55,20 @@
                 <label for="mobile">Mobile No : </label>
                 <br>
                 <input type="number" name="mobile" id="signup-mobile">
+                <span id="mobile-error"></span>
                 <br><br>
                 <label for="email">E-Mail : </label> 
                 <br>
                 <input type="email" name="email" id="signup-email"> 
+                <span id="email-error"></span>
                 <br><br>
                 <label for="password">Password  :</label>
                 <br>
                 <input type="password" name="password" id="signup-password">
-                <br><br>
+                <span id="password-error"></span>
+                <br>
+                <span id="error"></span>
+                <br>
                 <button type="submit" id="singup-btn">Signup</button>
             </form>
         </div>
