@@ -30,16 +30,17 @@
 // console.log(liId.parentElement);
 
 // 6 . childNodes - it gives us the childern node
-// const ulcId = document.getElementById("ul-container");
-// console.log(ulcId.childNodes); 
+const ulcId = document.getElementById("ul-container");
+let test=ulcId.childNodes;
+console.log(test[1]); 
 
 // 7. firstChild -  it gives the first child node of the parent node
 //  const ulfId = document.getElementById("ul-container");
 // console.log(ulfId.firstChild); 
 
 // 8 . firstElementChild - it gives first element child node
-// const uleId = document.getElementById("ul-container");
-// console.log(uleId.firstElementChild); 
+const uleId = document.getElementById("ul-container");
+console.log(uleId.firstElementChild); 
 
 // 9. previousSiblings  -  it gives the side wala node(it consider text, comment node)
 // const liId = document.getElementById("first");

@@ -14,7 +14,7 @@
 // li.append(document.createTextNode("this is dynamic li"));
 
 // ulCont.insertBefore(li,referenceEle);
-
+// console.log(ulCont);
 
 // 2 . insertAdjacentElement -  it append the  element to the selected position .
 
@@ -22,7 +22,7 @@
 // let li = document.createElement("h1");
 // li.append(document.createTextNode("this is dynamic h1"));
 
-//  cont.insertAdjacentElement("afterend",li);
+//  cont.insertAdjacentElement("beforeBegin",li);
 
 //  positions 
 //  (beforeBegin)<div>(afterBegin)  this is tag  (beforeend) </div> (afterend)  
@@ -51,8 +51,8 @@
 // cont.textContent = "this is textContent";
 // console.log(cont.innerText);
 
-// let cont = document.getElementById("container");
-//  cont.outerHTML += "<h1> this is outerHTML </h1>";
-// console.log(cont.outerHTML);
+let cont = document.getElementById("container");
+ cont.outerHTML += "<h1> this is outerHTML </h1>";
+console.log(cont.outerHTML);
 
 

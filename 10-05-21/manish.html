@@ -9,91 +9,97 @@
     <body>
         <script>
             //print number 1 to N
-           let ma= function (n){
-            for(let i=1;i<n;i++)
-            {
-                console.log(i);
-            }
+        //    let ma= function (n){
+        //     for(let i=1;i<n;i++)
+        //     {
+        //         console.log(i);
+        //     }
 
-           } 
-         ma(prompt("Enter No"));
+        //    } 
+        //  ma(prompt("Enter No"));
 
-         //print no n to 1
-         let m= function (n){
-            for(let i=n;i<=n;i--)
-            {
-                console.log(i);
-            }
+        //  //print no n to 1
+        //  let m= function (n){
+        //     for(let i=n;i<=n;i--)
+        //     {
+        //         console.log(i);
+        //     }
 
-           } 
-         m(prompt("Enter No"));
+        //    } 
+        //  m(prompt("Enter No"));
 
-           //print alphabet a to z
-           let al= ()=>{
-            for(let i=a;i<=z;i--)
-            {
-                console.log(i);
-            }
-           }
-           al();
-           //print 1 to 100 even number print
-           function evenno()
-           {
-               for(let i=1;i<=100;i++)
-               {
-                   if(i%2==0)
-                   {
-                       console.log(i);
-                   }       
-               }
-           }
-           evenno();
-           //print 1 to 100 odd number print
-           function oddno()
-           {
-               for(let i=1;i<=100;i++)
-               {
-                   if(i%2==1)
-                   {
-                       console.log(i);
-                   }       
-               }
-           }
-           oddno();
-           //the sum of even number
-           function sumOfevenNo(n)
-           {
-               for(let i=1;i<=n;i++)
-               {
-                if(i%2==0)
-                   {
-                       console.log(i);
-                   } 
-                   let sum=+i;
-               }
-           }
-           sumOfevenNo(prompt("Enter No"));
+        //    //print alphabet a to z
+        //    let al= ()=>{
+        //     for(let i=a;i<=z;i--)
+        //     {
+        //         console.log(i);
+        //     }
+        //    }
+        //    al();
+        //    //print 1 to 100 even number print
+        //    function evenno()
+        //    {
+        //        for(let i=1;i<=100;i++)
+        //        {
+        //            if(i%2==0)
+        //            {
+        //                console.log(i);
+        //            }       
+        //        }
+        //    }
+        //    evenno();
+        //    //print 1 to 100 odd number print
+        //    function oddno()
+        //    {
+        //        for(let i=1;i<=100;i++)
+        //        {
+        //            if(i%2==1)
+        //            {
+        //                console.log(i);
+        //            }       
+        //        }
+        //    }
+        //    oddno();
+        //    //the sum of even number
+        //    function sumOfevenNo(n)
+        //    {
+        //        for(let i=1;i<=n;i++)
+        //        {
+        //         if(i%2==0)
+        //            {
+        //                console.log(i);
+        //            } 
+        //            let sum=+i;
+        //        }
+        //    }
+        //    sumOfevenNo(prompt("Enter No"));
 
            //sum of odd number 
 
            function sumOfoddNo(n)
            {
-               for(let i=1;i<=n;i++)
+               console.log(typeof(n));
+              
+               for(var i=1;i<=n;i++)
                {
+                   let sum=0;
                 if(i%2==1)
                    {
                        console.log(i);
-                   } 
-                   let sum=+i;
-               }
+                       
+                   }        
+                   sum += i;        
+               }            
+               console.log(sum)
            }
-           sumOfoddNo(prompt("Enter no"));
+            let n=parseInt(prompt("Enter Number"));
+           sumOfoddNo(n);
 
            //write a programme to find count noumber of digit
-           function noOfdigit(n)
-           {
-                if()
-           }
+        //    function noOfdigit(n)
+        //    {
+        //         if()
+        //    }
 
         </script>
     </body>

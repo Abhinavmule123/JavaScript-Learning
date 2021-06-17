@@ -29,17 +29,17 @@
 //  ab.firstChild.appendData("World");
 
 // let ab = document.getElementById("ul-container");
-//     ab.firstChild.deleteData(0,5);
+//     ab.firstChild.deleteData(0,3);
 // console.log(ab.firstChild);
 
 // let ab = document.getElementById("ul-container");
-//     ab.firstChild.insertData(5,"World");
+//     ab.firstChild.insertData(6,"World");
 
 // let ab = document.getElementById("ul-container");
-//     ab.firstChild.replaceData(0,5,"world");
+//     ab.firstChild.replaceData(0,2,"world");
 
 // let ab = document.getElementById("ul-container");
-//  let x= ab.firstChild.substringData(0,4);
+//  let x= ab.firstChild.substringData(0,3);
 //  console.log(x);
 
 
@@ -115,13 +115,13 @@
 // 6. toggle()
 
 
-// let ab = document.getElementById("ul-container");
-// let x = ab.classList;
-// x.add("box")
-// x.remove("li");
-// x.replace("ul","ull");
-// console.log(x.contains("box"));
-// console.log(x.item(0));
-// x.toggle("box");
+let ab = document.getElementById("ul-container");
+let x = ab.classList;
+x.add("box")
+x.remove("li");
+x.replace("ul","ull");
+console.log(x.contains("box"));
+console.log(x.item(1));
+x.toggle("box");
 
 

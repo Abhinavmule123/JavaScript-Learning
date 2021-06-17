@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Todo App</title>
+    <link rel="stylesheet" href="manish.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <header>
+       <h1 class="animate__animated animate__pulse animate__infinite"> Abhinav Todo's App</h1>
+       <nav>
+           <ul id="menu">
+               <li><a href="index.html">Home</a></li>
+               <li id="add-todo"><a href="#">Add Todo</a></li>
+               <li id="manage-btn"><a href="#">Manage Todo</a></li>
+           </ul>
+       </nav>
+    </header>
+   <section>
+       <hr style="margin-bottom: 30px;">
+       <div id="todo-list">
+           <h2 align="center">Today's Task</h2> 
+           <hr>
+            <ol id="todo-ol">
+                <!-- <li> <p>College Work</p> <button type="button">Mark</button></li>
+                <li><p>Watching videos </p><button type="button">Mark</button></li>
+                <li><p>playing games </p><button type="button">Mark</button></li> -->
+            </ol>
+       </div>
+       <div id="todo-completed-list">
+            <h2 align="center">Today's Completed Task</h2>
+            <hr>
+            <ol id="completed-ol">
+
+            </ol>
+       </div>
+   </section>
+   <div id="background"></div>
+   <div id="modal">
+        <form id="add-form">
+            <label for="todo">Add Your Todo</label> <br>
+            <input type="text" name="todo" id="todo"> <br>
+            <input type="submit" value="Add">
+        </form>
+   </div>
+
+   <div id="manage-container">
+       <table border="1" width="500" style="border-collapse: collapse;" id="todo-table">
+           <tr><th>Sr. No </th> <th>Todo's</th> <th>Edit</th> <th>Delete</th> </tr>
+           <!-- <tr>
+               <td>1.</td>
+               <td>Watching Movies</td>
+               <td> <button class="edit-btn">Edit</button> </td>
+               <td> <button class="del-btn">Delete</button> </td>
+           </tr>
+           <tr>
+            <td>1.</td>
+            <td>Watching Movies</td>
+            <td> <button class="edit-btn">Edit</button> </td>
+            <td> <button class="del-btn">Delete</button> </td>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>Watching Movies</td>
+            <td> <button class="edit-btn">Edit</button> </td>
+            <td> <button class="del-btn">Delete</button> </td>
+        </tr> -->
+       </table>
+   </div>
+   <div id="toast" class="animate__animated animate__bounceIn">
+           
+   </div>
+    <script src="manish.js"></script>
+</body>
+</html>

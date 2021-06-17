@@ -1,2 +1,2 @@
 var num = prompt("Enter no");
-alert(num);
+console.log(typeof(num));

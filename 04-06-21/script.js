@@ -1,4 +1,4 @@
-// let btn = document.getElementById("btn");
+let btn = document.getElementById("btn");
 
 // btn.onclick = function run() {
 //     alert("button clicked");
@@ -41,8 +41,8 @@
 
 // let formId = document.getElementById("form");
 // formId.onsubmit = function(e){
-    // e.preventDefault();
-    // return false;
+//     e.preventDefault();
+//     return false;
 // }
 // document.body.onscroll = function(){
 //     alert("scrolled");
@@ -51,12 +51,12 @@
 document.oncontextmenu = function(){
     return false;
 }
-document.onkeyup = function(event){
-    if(event.keyCode == 67 && event.ctrlKey){
-        alert("copy not allowed ");
-        return false;
-    }
-}
+// document.onkeyup = function(event){
+//     if(event.keyCode == 67 && event.ctrlKey){
+//         alert("copy not allowed ");
+//         return false;
+//     }
+
 
 document.addEventListener("copy", function(evt){
     // Change the copied text if you want
@@ -64,3 +64,14 @@ document.addEventListener("copy", function(evt){
     // Prevent the default copy action
     evt.preventDefault();
   }, false);
+
+
+
+
+
+
+
+
+
+
+
