@@ -1,0 +1,84 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>FILREADER</title>
+     <style>
+         #upload-box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin-top: 10px;
+            background-size: 200px 200px;
+            background-repeat: no-repeat;
+         }
+     </style>
+ </head>
+ <body>
+     <!-- <form>
+         <input type="file" name="file" id="file">
+         <button type="button" id="upload-btn">Upload</button>
+     </form>
+
+     <div id="upload-box">
+
+     </div> -->
+     <input type="text" id="name" placeholder="Enter your name">
+     <input type="button" value="encode" onclick="callname()">
+     <div id="show" style="width: 200px;height: 200px; border: 1px solid #ccc;margin-top: 20px;">
+
+     </div>
+
+     <input type="text" id="named" placeholder="Enter encoded name" style="margin-top: 20px;">
+     <input type="button" value="decode" onclick="decode()">
+     <div id="showd" style="width: 200px;height: 200px; border: 1px solid #ccc;margin-top: 20px;">
+
+     </div>
+     <script>
+       function callname(){
+        let name = btoa(document.getElementById("name").value);
+        document.getElementById("show").innerHTML = name;
+       }
+       function decode(){
+        let name = atob(document.getElementById("named").value);
+        document.getElementById("showd").innerHTML = name;
+       }
+        //  let a = "abhi";
+        //  let enc = btoa(a);
+        //  console.log(enc);
+        //  let dec = atob(enc);
+        // console.log(dec);
+        //  let fileId = document.getElementById("file");
+        //  let uploadBtn = document.getElementById("upload-btn");
+        //  let uploadBox = document.getElementById("upload-box");
+        //     uploadBox.style.backgroundImage = `url("${localStorage.getItem('imgURL')}")`;
+
+
+        //  fileId.onchange = function(){
+        //     let file = fileId.files[0];
+        //     // console.log(file);
+        //     // alert(file.name);
+        //     // if(file.size > 22000){
+        //     //     alert("file can not be uploaded");
+        //     // }else{
+        //     //     alert("file can be upload");
+        //     // }
+        //     let reader = new FileReader();
+        //     reader.readAsDataURL(file);
+        //     reader.onloadend = function(event){
+        //         // console.log(event.target.result);
+        //         uploadBox.style.backgroundImage = `url("${event.target.result}")`;
+        //         localStorage.setItem("imgURL",event.target.result); 
+        //  }
+
+            // history.back(); -
+
+            // history.forward();
+            // history.go(-1) - for backward
+            // history.go(1) - for forward
+            // history.go(0) -  for reload
+     </script>
+ </body>
+ </html>
