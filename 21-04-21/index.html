@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window.Location</title>
+</head>
+<body>
+    <button type="button" id="url-btn">Click here to url of the page</button>
+
+    <button id="openId" type="button">Open new Url</button>
+
+    <button type="button" id="close">Close window</button>
+   <script>
+       let urlBtn = document.getElementById("url-btn");
+       
+        urlBtn.onclick = function (){
+        //    location.href = "https://www.google.com/";
+            // alert(location.hash);
+            // location.hash = "#actions";
+            // alert(location.protocol);
+            // host , hostname ,port, pathname
+
+            // location.reload()
+
+            // location.assign("https://www.google.com/");
+
+            // location.replace("https://www.google.com/");
+        }
+        // <!-- Intro -->
+    // window.location.href = current url of the page
+
+
+    // window.open() - it creates the new window object and return new object 
+//  if new window object not created it returns null 
+//         let openId = document.getElementById("openId");
+//         let closeId = document.getElementById("close");
+//    openId.onclick =  function openUrl(){
+    
+//     let newWindow =  window.open("https://www.google.com/","_blank","width=100,height=100");
+      
+// };
+//     closeId.onclick = function(){
+//         window.close(newWindow);
+//     }
+        // newWindow.document.innerHTML = "<h1>Hello new Window</h1>";
+
+
+
+   </script>
+</body>
+</html>

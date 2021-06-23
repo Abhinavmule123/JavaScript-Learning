@@ -1,0 +1,45 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.app-title{
+    margin: 0;
+    padding: 0;
+    padding: 15px 0px;
+    font-size: 40px;
+}
+
+.editor{
+    width: 70%;
+    height: 500px;
+    border-left: 25px ridge red;
+    border-right: 25px ridge red;
+    margin: 40px auto;
+    box-shadow: 3px 8px 20px #ddd;
+    padding: 15px;
+    font-size: 22px;
+}
+.editor:focus{
+    outline: none;
+}
+.editor-options{
+    position: absolute;
+    top: 16%;
+    left: 1%;
+    width: 160px;
+    height: auto;
+    border: 3px solid #ccc;
+    padding: 5px;
+}
+.editor-options .btn{
+    background-color: darkcyan;
+    color: white;
+    padding: 5px 15px;
+    margin: 10px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
