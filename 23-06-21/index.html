@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODE EDITOR</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            margin: 0;
+            padding: 0;
+            padding-top: 5px;
+        }
+
+        .code-box{
+            width: 42%;
+            height: 550px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 1px 3px 13px grey;
+            float: left;
+          
+            margin: 0 3%;
+            margin-top: 3%; 
+        }
+
+        .result{
+            width: 42%;
+            height: 550px;
+            border-radius: 2px solid #ccc;
+            box-shadow: 1px 3px 13px grey;
+            float: left;
+            border-radius: 5px;
+            
+            margin: 0 3%;
+            margin-top: 3%;
+
+        }
+        #code{
+            border: none;
+            font-family: century gothic;
+            padding: 10px;
+            font-size: 25px;
+            width: 97%;
+            height: 520px;
+        }
+        #code:focus{
+            outline: none;
+        }
+        legend{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header style="width: 100%; height:50px ; background-color: rgb(106, 13, 172);color: white; font-family: sans-serif;">
+        <h1 align="center">Abhi Code Editor</h1>
+    </header>
+
+    <fieldset class="code-box">
+        <legend>Type Your Code here</legend>
+        <form>
+            <textarea name="code" id="code">
+
+            </textarea>
+        </form>
+    </fieldset>
+
+    <fieldset class="result">
+        <legend>Code Result</legend>
+        <div id="code-result" style="height: auto;">
+
+        </div>
+    </fieldset>
+
+    <button id="run-btn" style="background-color: orange;color: white;padding: 5px 15px ;border: none;margin-top: 20px;margin-left: 40%;">Run Code</button>
+
+    <!-- <form name="myform">
+        <input type="text" name="name1" id="name1">
+        <button type="submit" onclick="
+        let name = document.forms['myform']['name1'];
+            console.log(name.value); return false;">submit</button>
+    </form> -->
+</body>
+
+<script>
+    const inputCode = document.getElementById("code");
+    const codeResult = document.getElementById("code-result");
+    const btn = document.getElementById("run-btn");
+    inputCode.oninput = function(){
+        run();
+    }
+    btn.onclick = function(){
+        run();
+    }
+    function run(){
+        // console.log(inputCode.value);
+        // let check = inputCode?false:true;
+        // console.log(inputCode);
+        // if(inputCode.value == ""){
+        //     alert("Write Some Code");
+        // }else{
+        //     alert("code");
+        // }
+        let code = inputCode.value;
+        codeResult.innerHTML = code;
+    }
+
+    //Forms Api
+
+
+    // try catch finally 
+
+    // try {
+    //     console.log("skipped block");
+    // } catch (error) {
+    //     console.log("catch error is "+error);
+    // }
+    // finally{
+    //     console.log("executed finally block");
+    // }
+</script>
+</html>
