@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text File Edit and Save Application</title>
+    <style>
+        button{
+            color: white;
+            background-color: teal;
+            border: none;
+            font-size: 18px;
+            padding: 8px 16px;
+        }
+        #editor{
+            width: 70%;
+            box-shadow: 2px 5px 12px grey;
+            height: 500px;
+            margin: 20px auto;
+            border-left: 18px ridge red;
+            border-right: 18px ridge red;
+            padding: 10px;
+            font-size: 20px;
+            box-sizing: border-box;
+            font-family: century gothic;
+            overflow: scroll;
+        }
+        #editor:focus{
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 align="center" style="font-size: 30px;font-family: cursive;">Notepad like Application</h1>
+        <center>
+                <button id="open-file-btn">
+                    Open your File
+                </button>
+        <button id="save-btn">Save your file</button>
+        </center>
+    </header>
+    <div id="editor" contenteditable="true">
+
+    </div>
+    <script>
+        const openFileBtn = document.getElementById("open-file-btn");
+        const saveBtn = document.getElementById("save-btn");
+        const editor = document.getElementById("editor");
+        openFileBtn.onclick = function(){
+            let input = document.createElement("INPUT");
+            input.type = "file";
+            input.id = "txtFile";
+            input.accept = "text/plain";
+            input.click();
+            input.onchange = function(){
+                let file = input.files[0];
+                let reader =  new FileReader();
+                reader.readAsText(file);
+                reader.onload = function(){
+                    editor.innerText = reader.result;
+                }
+            }
+        }
+        saveBtn.onclick = function(){
+            let name = window.prompt("Enter Your File Name");
+
+            if(name != "" && name != null){
+                let file_data = editor.innerText;
+                let file = new Blob([file_data],{type:'text/plain'});
+                let a = document.createElement("A");
+                a.href =  URL.createObjectURL(file);
+                a.download = name;
+                a.click();
+            }else{
+                alert("please give name to file");
+            }
+        }
+    </script>
+</body>
+</html>
